@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #ccc;
+}
+
+
+header {
+    background-image: linear-gradient(135deg, black, white);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+h1 {
+    color: white;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+li {
+    display: inline;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+li.inicio {
+    margin-right: 15px;
+}
+
+
+a.inicio {
+    color: red;
+}
+
+
+li.contacto {
+    margin-left: 15px;
+}
+
+
+a.contacto {
+    color: green;
+}
+
+
+article {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px;
+}
+
+
+footer {
+    background-image: radial-gradient(black, white);
+    color: white;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
