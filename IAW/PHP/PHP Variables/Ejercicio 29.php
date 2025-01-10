@@ -17,8 +17,8 @@
         $descuento = $compra * 15 / 100;
         $final =  $compra - $descuento;
  
-        echo "Compra: $compra €.";
-        echo "Descuento: 15% ($descuento €).";
-        echo "Cantidad final: $final";
+        echo "Compra: $compra €<br>";
+        echo "Descuento: 15% ($descuento €) <br>";
+        echo "Cantidad final: $final €";
     ?>
 </body>
