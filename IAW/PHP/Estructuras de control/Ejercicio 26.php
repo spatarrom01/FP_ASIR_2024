@@ -13,10 +13,10 @@
 
 <h1>Calculadora simple</h1>
         <form action="" method="GET">
-        <label for="num">Número 1:</label>
+        <label for="n1">Número 1:</label>
         <input type="number" name="n1" id="n1" required><br><br>
 
-        <label for="num">Número 2:</label>
+        <label for="n2">Número 2:</label>
         <input type="number" name="n2" id="n2" required><br><br>
 
         <label for="op">Elige la operación:</label>
@@ -36,25 +36,33 @@
 
     $n1 = $_GET['n1'] ?? 0;
     $n2 = $_GET['n2'] ?? 0;
-    $op = $_GET['op'];
-
-    $suma = $n1 + $n2;
-    $resta = $n1 - $n2;
-    $mult = $n1 * $n2;
-    $div = $n1 / $n2;
+    $op = $_GET['op'] ?? 0;
 
 
     switch ($op) {
-        case "Sumar": echo "El resultado es $suma";
+        case "Sumar": 
+            $suma = $n1 + $n2;
+            echo "El resultado es $suma";
         break;
 
-        case "Restar": echo "El resultado es $resta";
+        case "Restar":
+            $resta = $n1 - $n2;
+            echo "El resultado es $resta";
         break;
 
-        case "Multiplicar": echo "El resultado es $mult";
+        case "Multiplicar": 
+            $mult = $n1 * $n2;
+            echo "El resultado es $mult";
         break;
 
-        default: echo "El resultado es $div";
+        case "Dividir":
+            if ($n2 !=0) {
+                $div = $n1 / $n2;
+                echo "El resultado es $div";
+            } else {
+                echo "La operación no es válida.";
+            }
+            
         break;
     }
 

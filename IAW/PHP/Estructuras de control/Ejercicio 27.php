@@ -13,19 +13,20 @@
 
 <h1>Tipos de áreas</h1>
         <form action="" method="GET">
+        <label for="forma">Elige la operación:</label>
+        <select name="forma" id="forma">
+            <option value="Cuadrado">Cuadrado</option>
+            <option value="Rectangulo">Rectángulo</option>
+            <option value="Triangulo">Triángulo</option>
+            <option value="Circulo">Círculo</option>
+            <option value="Trapecio">Trapecio</option>
+        </select>
+
         <label for="num">Número 1:</label>
         <input type="number" name="n1" id="n1" required><br><br>
 
         <label for="num">Número 2:</label>
         <input type="number" name="n2" id="n2" required><br><br>
-
-        <label for="op">Elige la operación:</label>
-        <select name="op" id="op">
-            <option value="Sumar">Sumar</option>
-            <option value="Restar">Restar</option>
-            <option value="Multiplicar">Multiplicar</option>
-            <option value="Dividir">Dividir</option>
-        </select>
 
         <input type="submit" value="Calcular"><br>
     </form>
@@ -38,10 +39,11 @@
     $n2 = $_GET['n2'] ?? 0;
     $op = $_GET['op'];
 
-    $suma = $n1 + $n2;
-    $resta = $n1 - $n2;
-    $mult = $n1 * $n2;
-    $div = $n1 / $n2;
+    $cuadrado = $n1 + $n2;
+    $rectangulo = $n1 - $n2;
+    $triangulo = $n1 * $n2;
+    $circulo = $n1 / $n2;
+    $trapecio = 
 
 
     switch ($op) {
