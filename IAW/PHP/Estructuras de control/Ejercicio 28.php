@@ -2,17 +2,17 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio 27</title>
+    <title>Ejercicio 28</title>
 </head>
 
 
 <header>
-        <h1>Ejercicio 27</h1>
+        <h1>Ejercicio 28</h1>
 </header>
 
 
 <h1>Tipos de áreas</h1>
-    <form action="" method="GET">
+        <form action="" method="GET">
         <label for="forma">Elige la forma geométrica:</label>
         <select name="forma" id="forma">
             <option value="Cuadrado">Cuadrado</option>
